@@ -1,6 +1,4 @@
 # Client Task A #
-# Add your pseudocode to this file below this line: #
-# ------------------------------------------------- #
 
 Client (A): The Counting Company. Needs a small relaxing number game.
 
