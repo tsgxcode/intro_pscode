@@ -1,4 +1,52 @@
 # Client Task B #
-# Add your pseudocode to this file below this line: #
-# ------------------------------------------------- #
+
+Warehouse Land INC. Needs to help customers find their way around the facility.
+
+The client's facility is about 100.000 square ft. w/ 2 levels. The customers need a map of the levels, department, bathrooms, isles, etc.
+
+1. Data Structure :
+2d "map" contains cells, each holding locations of each level, isles, products, etc.
+Coordinates: x and y position on the grid, for finding Aisle, Section, item, etc.
+Connecting each using north, south, east, west mapping.
+
+2. Algorithm for paths:
+shows the customers the fastest way from their location to the items / place in the warehouse.
+
+3. User Interface:
+Graphical display of the customers current location and a very basic visual display of where they want to go.
+
+Pseudo Code:  Python
+
+
+class Node 
+    def __init__ self, x, y, label
+        self.x = x
+        self.y = y
+        self.label = label
+        self.connections = 
+
+def bfs start, target :
+    queue =  start
+    visited = set 
+    parent = 
+
+    while queue:
+        current = queue.pop 0
+        visited.add current
+
+        if current is target:
+            path = 
+            node = target
+            while node is not start
+                path.insert 0, node
+                node = parent node
+            path.insert 0, start
+            return path
+
+        for neighbor in current.connections:
+            if neighbor not in visited:
+                queue.append neighbor
+                parent neighbor = current
+
+    return None  
 

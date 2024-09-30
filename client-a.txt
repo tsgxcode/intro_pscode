@@ -2,3 +2,62 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+Client (A): The Counting Company. Needs a small relaxing number game.
+
+Random number game (JavaSript):
+
+Step 1-Generating a random number
+
+  1. Using Math.random() function to generate some number between 1 and 10
+  2. Multiply the result by the max range you want, here we set it to 50 and we now 
+     round it down using the Math.floor() function.  
+  3. Store the generated number in a variable.
+
+Step 2-Initialize the variables
+
+     Build variables to hold user's guess, number of attempts and a signal to indicate if
+     the game is over.
+
+ 
+Step 3. Begin game loop (While game is not over signal will be false )
+   
+   1. Prompt user to enter a guess
+   2. Convert user input to a number using parseInt()
+   3. if - guess is correct:
+      Display a message: "You Won!" also show number of attempts.
+      Set the Game over signal to True.
+   
+    Else: 
+
+     1. If guess is to high: message "Your guess is to high"
+     2. If guess is to high: message "Your guess is to low"
+     3. Increment number of guesses.
+
+Pseudo Code:
+
+function numberGuessingGame() 
+       Generats a random number between 1 and 10
+     let randomeNumber = Math.foor  * 10 +1;
+
+       Initialize the variables
+     let guess;
+     let attempts = 0;
+
+       Start game loop
+     while  attepts < 3 
+      guess = parseInt prompt "Enter your guess 1-10:" 
+
+        if  guess === randomeNumber  
+          console.log "Great work! You guessed the correct number!" + attempts + attempts."
+          retun;
+
+        else if guess > randomNumber
+        console.log "Sorry that guess is to high";
+
+        else 
+        console.log "Sorry that guess is low" ;
+
+        attempts++;
+
+        console.log "Sorry, you have run out guesses. The correct nnumber is " + randomeNumber  ;
+           

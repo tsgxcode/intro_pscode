@@ -1,4 +1,44 @@
 # Client Task C #
-# Add your pseudocode to this file below this line: #
-# ------------------------------------------------- #
+
+The Organ-iZ-iT Co. Needs a small package counting app
+
+
+
+
+The program counts the number of items a hardware device scans to sort for boxing packages into cases. Each package scanned is two (2) products. 
+Each case can only fit 50 product packages. This program should fill the customer's need, as it prints numbers from 2 to 50, counting by twos.
+
+Pseudocode C# 
+
+Variables:
+
+packageCount - Integer to store the current package count.
+caseCount - Integer to store the current case count.
+
+
+Algorithm:
+
+Initialize packageCount to 2.
+Initialize caseCount to 0.
+While packageCount is less than or equal to 50:
+Print packageCount.
+Increment packageCount by 2.
+If packageCount is greater than or equal to 50:
+Increment caseCount by 1.
+Print "New Case Started."
+Set packageCount to 2.
+
+int packageCount = 2;
+int caseCount = 0;
+
+while packageCount <= 50 
+    Console.WriteLine packageCount;
+    packageCount += 2;
+
+    if  packageCount >= 50
+        caseCount++;
+        Console.WriteLine "New Case Started.";
+        packageCount = 2;
+
+Console.WriteLine "Total Cases: " + caseCount;
 
